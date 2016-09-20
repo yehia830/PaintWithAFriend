@@ -1,46 +1,47 @@
 package sample;
 
-/**
- * Created by Yehia830 on 9/6/16.
- */
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+
+
 public class Stroke {
-    private double xCord;
-    private double yCord;
-    private int strokeSize;
+    public double xCoordinate;
+    public double yCoordinate;
+    public int strokeSize;
 
-    public Stroke(){
-
+    public Stroke() {
     }
 
-    public Stroke(double xCord, double yCord, int strokeSize) {
-        this.xCord = xCord;
-        this.yCord = yCord;
+    public Stroke(double xCoordinate, double yCoordinate, int strokeSize) {
+        this.xCoordinate = xCoordinate;
+        this.yCoordinate = yCoordinate;
         this.strokeSize = strokeSize;
     }
 
+
     @Override
     public String toString() {
-        return "Stroke : " +
-                "xCord=" + xCord +
-                ", yCord=" + yCord +
-                ", strokeSize=" + strokeSize +
-                '}';
+        return "Stroke info: " +
+                "xCoordinate=" + xCoordinate + ", " +
+                "yCoordinate=" + yCoordinate + ", " +
+                "strokeSize=" + strokeSize;
     }
 
-    public double getxCord() {
-        return xCord;
+    // getters and setters
+    public double getxCoordinate() {
+        return xCoordinate;
     }
 
-    public void setxCord(double xCord) {
-        this.xCord = xCord;
+    public void setxCoordinate(double xCoordinate) {
+        this.xCoordinate = xCoordinate;
     }
 
-    public double getyCord() {
-        return yCord;
+    public double getyCoordinate() {
+        return yCoordinate;
     }
 
-    public void setyCord(double yCord) {
-        this.yCord = yCord;
+    public void setyCoordinate(double yCoordinate) {
+        this.yCoordinate = yCoordinate;
     }
 
     public int getStrokeSize() {
@@ -50,4 +51,5 @@ public class Stroke {
     public void setStrokeSize(int strokeSize) {
         this.strokeSize = strokeSize;
     }
+
 }
